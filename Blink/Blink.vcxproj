@@ -11,10 +11,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Blink\Log.cpp" />
     <ClCompile Include="src\Blink\Application.cpp" />
-    <ClCompile Include="src\Blink\Core.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Blink\Log.h" />
     <ClInclude Include="src\Blink.h" />
     <ClInclude Include="src\Blink\Application.h" />
     <ClInclude Include="src\Blink\Core.h" />
@@ -67,6 +68,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BLINK_PLATFORM_WINDOWS;BLINK_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Blink\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -81,6 +83,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>BLINK_PLATFORM_WINDOWS;BLINK_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Blink\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

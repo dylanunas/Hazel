@@ -7,7 +7,7 @@ namespace Blink {
 	Application::~Application() {}
 
 	void Application::run() {
-		std::cout << "Press enter to continue.\n";
+		std::cout << "Enter a letter then enter to continue.\n";
 		std::cin.ignore();
 	}
 }

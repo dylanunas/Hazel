@@ -1,0 +1,3 @@
+[submodule "Blink/vendor/spdlog"]
+	path = Blink/vendor/spdlog
+	url = https://github.com/gabime/spdlog
