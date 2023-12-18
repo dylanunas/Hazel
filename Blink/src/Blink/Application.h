@@ -16,6 +16,11 @@ namespace Blink {
 		virtual ~Application();
 
 		// member functions
+
+		/**
+		 * @brief - runs the program and is the first entry point, keeps going 
+		 *          until the user wants to exit 
+		 */
 		void run();
 	};
 	

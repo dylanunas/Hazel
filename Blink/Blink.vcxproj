@@ -146,6 +146,9 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="KeyEvent.h" />
+    <ClInclude Include="MouseEvent.h" />
     <ClInclude Include="src\Blink.h" />
     <ClInclude Include="src\Blink\Application.h" />
     <ClInclude Include="src\Blink\Core.h" />
