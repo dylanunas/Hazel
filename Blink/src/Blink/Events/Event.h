@@ -3,7 +3,7 @@
 
 #include <string>
 #include <functional>
-#include "src/Blink/Core.h"
+#include "../Core.h"
 
 namespace Blink {
 

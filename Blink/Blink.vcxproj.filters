@@ -5,7 +5,7 @@
       <UniqueIdentifier>{9557E60C-016C-0EBE-CAED-B11D36C10AEF}</UniqueIdentifier>
     </Filter>
     <Filter Include="Blink\Events">
-      <UniqueIdentifier>{31042ab6-cd4f-40ea-98c0-eae33a9ae86e}</UniqueIdentifier>
+      <UniqueIdentifier>{D909457B-C56C-D41F-6EF2-0CD65A34A0A2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -19,17 +19,20 @@
     <ClInclude Include="src\Blink\EntryPoint.h">
       <Filter>Blink</Filter>
     </ClInclude>
+    <ClInclude Include="src\Blink\Events\ApplicationEvent.h">
+      <Filter>Blink\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blink\Events\Event.h">
+      <Filter>Blink\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blink\Events\KeyEvent.h">
+      <Filter>Blink\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Blink\Events\MouseEvent.h">
+      <Filter>Blink\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Blink\Log.h">
       <Filter>Blink</Filter>
-    </ClInclude>
-    <ClInclude Include="Event.h">
-      <Filter>Blink\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="KeyEvent.h">
-      <Filter>Blink\Events</Filter>
-    </ClInclude>
-    <ClInclude Include="MouseEvent.h">
-      <Filter>Blink\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

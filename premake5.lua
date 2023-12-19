@@ -18,13 +18,14 @@ project "Blink"
 	}
 
 	includedirs {
-		"%{prj.name}/vendor/spdlog/include"
+		"%{prj.name}/vendor/spdlog/include",
+		"%{prj.name}/src"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22621.0"
+		systemversion "latest"
 
 		defines {
 			"BLINK_PLATFORM_WINDOWS",
@@ -72,7 +73,7 @@ project "Sandbox"
 	filter "system:windows"
 		cppdialect "C++17"
 		staticruntime "On"
-		systemversion "10.0.22621.0"
+		systemversion "latest"
 
 		defines {
 			"BLINK_PLATFORM_WINDOWS",

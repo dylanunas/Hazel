@@ -2,6 +2,7 @@
 #define BLINK_APPLICATION_H
 
 #include "Core.h"
+#include "Events/Event.h"
 
 namespace Blink {
 
