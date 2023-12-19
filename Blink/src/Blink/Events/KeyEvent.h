@@ -1,7 +1,6 @@
 #ifndef BLINK_KEYEVENT_H
 #define BLINK_KEYEVENT_H
 
-#include <sstream>
 #include "Event.h"
 
 namespace Blink {

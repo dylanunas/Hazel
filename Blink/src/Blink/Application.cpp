@@ -1,4 +1,4 @@
-#include <iostream>
+#include "BlinkPCH.h"
 #include "Application.h"
 #include "Log.h"
 #include "Events/ApplicationEvent.h"
@@ -11,7 +11,7 @@ namespace Blink {
 	void Application::run() {
 		WindowResizeEvent e(1280, 720);
 
-		std::cout << "Enter a letter then enter to continue.\n";
+		std::cout << "Press enter to continue.\n";
 		std::cin.ignore();
 	}
 }

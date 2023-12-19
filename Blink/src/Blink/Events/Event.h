@@ -1,8 +1,7 @@
 #ifndef BLINK_EVENT_H
 #define BLINK_EVENT_H
 
-#include <string>
-#include <functional>
+#include "BlinkPCH.h"
 #include "../Core.h"
 
 namespace Blink {

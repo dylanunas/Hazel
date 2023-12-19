@@ -1,8 +1,6 @@
 #ifndef BLINK_LOG_H
 #define BLINK_LOG_H
 
-#include <memory>
-
 #include "Core.h"
 
 #pragma warning(push, 0)

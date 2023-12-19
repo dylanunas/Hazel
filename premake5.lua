@@ -12,6 +12,9 @@ project "Blink"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "BlinkPCH.h"
+	pchsource "Blink/src/BlinkPCH.cpp"
+
 	files { 
 		"%{prj.name}/src/**.h",
 		"%{prj.name}/src/**.cpp"
