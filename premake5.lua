@@ -4,6 +4,12 @@ workspace "Blink"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- include directories relative to the root folder
+IncludeDir = {}
+IncludeDir["GLFW"] = "Blink/vendor/GLFW/include"
+
+include "Hazel/vendor/GLFW"
+
 project "Blink"
 	location "Blink"
 	kind "SharedLib"
@@ -22,7 +28,8 @@ project "Blink"
 
 	includedirs {
 		"%{prj.name}/vendor/spdlog/include",
-		"%{prj.name}/src"
+		"%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
 	}
 
 	filter "system:windows"

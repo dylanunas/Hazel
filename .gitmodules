@@ -1,3 +1,6 @@
 [submodule "Blink/vendor/spdlog"]
 	path = Blink/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "Blink/vendor/glfw"]
+	path = Blink/vendor/glfw
+	url = https://github.com/glfw/glfw.git
