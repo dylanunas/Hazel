@@ -3,7 +3,4 @@
 	url = https://github.com/gabime/spdlog
 [submodule "Hazel/vendor/glfw"]
 	path = Hazel/vendor/glfw
-	url = https://github.com/glfw/glfw.git
-[submodule "Hazel/vendor/glfw"]
-	path = Hazel/vendor/glfw
 	url = https://github.com/glfw/glfw
