@@ -1,9 +1,9 @@
-#include "BlinkPCH.h"
+#include "HazelPCH.h"
 #include "Application.h"
 #include "Log.h"
 #include "Events/ApplicationEvent.h"
 
-namespace Blink {
+namespace Hazel {
 
 	Application::Application() {}
 	Application::~Application() {}

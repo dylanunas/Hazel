@@ -1,12 +1,12 @@
-#ifndef BLINK_APPLICATION_H
-#define BLINK_APPLICATION_H
+#ifndef HAZEL_APPLICATION_H
+#define HAZEL_APPLICATION_H
 
 #include "Core.h"
 #include "Events/Event.h"
 
-namespace Blink {
+namespace Hazel {
 
-	class BLINK_API Application {
+	class HAZEL_API Application {
 	private:
 
 	public:
@@ -30,4 +30,4 @@ namespace Blink {
 
 }
 
-#endif // BLINK_APPLICATION_H
+#endif // HAZEL_APPLICATION_H

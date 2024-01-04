@@ -1,11 +1,11 @@
-#ifndef BLINK_APPLICATION_EVENT_H
-#define BLINK_APPLICATION_EVENT_H
+#ifndef HAZEL_APPLICATION_EVENT_H
+#define HAZEL_APPLICATION_EVENT_H
 
 #include "Event.h"
 
-namespace Blink {
+namespace Hazel {
 
-	class BLINK_API WindowResizeEvent : public Event {
+	class HAZEL_API WindowResizeEvent : public Event {
 	private:
 		size_t m_width{};
 		size_t m_height{};
@@ -40,7 +40,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class BLINK_API WindowCloseEvent : public Event {
+	class HAZEL_API WindowCloseEvent : public Event {
 	public:
 		WindowCloseEvent() = default;
 
@@ -48,7 +48,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class BLINK_API AppTickEvent : public Event
+	class HAZEL_API AppTickEvent : public Event
 	{
 	public:
 		AppTickEvent() = default;
@@ -57,7 +57,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class BLINK_API AppUpdateEvent : public Event
+	class HAZEL_API AppUpdateEvent : public Event
 	{
 	public:
 		AppUpdateEvent() = default;
@@ -66,7 +66,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryApplication)
 	};
 
-	class BLINK_API AppRenderEvent : public Event
+	class HAZEL_API AppRenderEvent : public Event
 	{
 	public:
 		AppRenderEvent() = default;
@@ -76,4 +76,4 @@ namespace Blink {
 	};
 }
 
-#endif // BLINK_APPLICATION_EVENT_H
+#endif // HAZEL_APPLICATION_EVENT_H

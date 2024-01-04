@@ -1,10 +1,10 @@
-#ifndef BLINK_EVENT_H
-#define BLINK_EVENT_H
+#ifndef HAZEL_EVENT_H
+#define HAZEL_EVENT_H
 
-#include "BlinkPCH.h"
+#include "HazelPCH.h"
 #include "../Core.h"
 
-namespace Blink {
+namespace Hazel {
 
 	enum class EventType {
 		None = 0,
@@ -30,7 +30,7 @@ namespace Blink {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int getCategoryFlags() const override { return category; }
 
-	class BLINK_API Event {
+	class HAZEL_API Event {
 	protected:
 
 		bool m_isHandled{ false };
@@ -96,4 +96,4 @@ namespace Blink {
 
 }
 
-#endif // BLINK_EVENT_H
+#endif // HAZEL_EVENT_H

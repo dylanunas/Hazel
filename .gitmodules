@@ -1,6 +1,9 @@
-[submodule "Blink/vendor/spdlog"]
-	path = Blink/vendor/spdlog
+[submodule "Hazel/vendor/spdlog"]
+	path = Hazel/vendor/spdlog
 	url = https://github.com/gabime/spdlog
-[submodule "Blink/vendor/glfw"]
-	path = Blink/vendor/glfw
+[submodule "Hazel/vendor/glfw"]
+	path = Hazel/vendor/glfw
 	url = https://github.com/glfw/glfw.git
+[submodule "Hazel/vendor/glfw"]
+	path = Hazel/vendor/glfw
+	url = https://github.com/glfw/glfw

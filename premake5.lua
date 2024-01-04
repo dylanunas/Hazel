@@ -1,4 +1,4 @@
-workspace "Blink"
+workspace "Hazel"
 	architecture "x64"
 	configurations { "Debug", "Release", "Dist" }
 
@@ -6,20 +6,20 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- include directories relative to the root folder
 IncludeDir = {}
-IncludeDir["GLFW"] = "Blink/vendor/GLFW/include"
+IncludeDir["GLFW"] = "Hazel/vendor/GLFW/include"
 
 include "Hazel/vendor/GLFW"
 
-project "Blink"
-	location "Blink"
+project "Hazel"
+	location "Hazel"
 	kind "SharedLib"
 	language "C++"
 
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
-	pchheader "BlinkPCH.h"
-	pchsource "Blink/src/BlinkPCH.cpp"
+	pchheader "HazelPCH.h"
+	pchsource "Hazel/src/HazelPCH.cpp"
 
 	files { 
 		"%{prj.name}/src/**.h",
@@ -38,8 +38,8 @@ project "Blink"
 		systemversion "latest"
 
 		defines {
-			"BLINK_PLATFORM_WINDOWS",
-			"BLINK_BUILD_DLL"
+			"HAZEL_PLATFORM_WINDOWS",
+			"HAZEL_BUILD_DLL"
 		}
 
 		postbuildcommands {
@@ -47,15 +47,15 @@ project "Blink"
 		}
 
 	filter "configurations:Debug"
-		defines "BLINK_DEBUG"
+		defines "HAZEL_DEBUG"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "BLINK_RELEASE"
+		defines "HAZEL_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "BLINK_DIST"
+		defines "HAZEL_DIST"
 		optimize "On"
 
 project "Sandbox"
@@ -72,12 +72,12 @@ project "Sandbox"
 	}
 
 	includedirs {
-		"Blink/vendor/spdlog/include",
-		"Blink/src"
+		"Hazel/vendor/spdlog/include",
+		"Hazel/src"
 	}
 
 	links {
-		"Blink"
+		"Hazel"
 	}
 
 	filter "system:windows"
@@ -86,18 +86,18 @@ project "Sandbox"
 		systemversion "latest"
 
 		defines {
-			"BLINK_PLATFORM_WINDOWS",
+			"HAZEL_PLATFORM_WINDOWS",
 		}
 
 	filter "configurations:Debug"
-		defines "BLINK_DEBUG"
+		defines "HAZEL_DEBUG"
 		symbols "On"
 
 	filter "configurations:Release"
-		defines "BLINK_RELEASE"
+		defines "HAZEL_RELEASE"
 		optimize "On"
 
 	filter "configurations:Dist"
-		defines "BLINK_DIST"
+		defines "HAZEL_DIST"
 		optimize "On"
 

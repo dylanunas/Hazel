@@ -1,11 +1,11 @@
-#ifndef BLINK_KEYEVENT_H
-#define BLINK_KEYEVENT_H
+#ifndef HAZEL_KEYEVENT_H
+#define HAZEL_KEYEVENT_H
 
 #include "Event.h"
 
-namespace Blink {
+namespace Hazel {
 
-	class BLINK_API KeyEvent : public Event {
+	class HAZEL_API KeyEvent : public Event {
 	protected:
 		int m_keyCode { 0 };
 		
@@ -24,7 +24,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
 	};
 	
-	class BLINK_API KeyPressedEvent : public KeyEvent {
+	class HAZEL_API KeyPressedEvent : public KeyEvent {
 	private:
 		int m_repeatCount;
 
@@ -42,7 +42,7 @@ namespace Blink {
 		EVENT_CLASS_TYPE(KeyPressed)
 	};
 
-	class BLINK_API KeyReleasedEvent : public KeyEvent {
+	class HAZEL_API KeyReleasedEvent : public KeyEvent {
 	public:
 		// default constructor
 		KeyReleasedEvent(int keyCode)
@@ -58,4 +58,4 @@ namespace Blink {
 	};
 }
 
-#endif // BLINK_KEYEVENT_H
+#endif // HAZEL_KEYEVENT_H

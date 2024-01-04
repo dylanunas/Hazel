@@ -1,5 +1,5 @@
-#ifndef BLINK_PCH_H
-#define BLINK_PCH_H
+#ifndef HAZEL_PCH_H
+#define HAZEL_PCH_H
 
 // general stuff
 #include <iostream>
@@ -15,8 +15,8 @@
 #include <unordered_map>
 #include <unordered_set>
 
-#ifdef BLINK_PLATFORM_WINDOWS
+#ifdef HAZEL_PLATFORM_WINDOWS
 	#include <Windows.h>
-#endif // BLINK_PLATFORM_WINDOWS
+#endif // HAZEL_PLATFORM_WINDOWS
 
-#endif // BLINK_PCH_H
+#endif // HAZEL_PCH_H

@@ -1,11 +1,11 @@
-#ifndef BLINK_MOUSE_EVENT_H
-#define BLINK_MOUSE_EVENT_H
+#ifndef HAZEL_MOUSE_EVENT_H
+#define HAZEL_MOUSE_EVENT_H
 
 #include "Event.h"
 
-namespace Blink {
+namespace Hazel {
 
-	class BLINK_API MouseEvent : public Event {
+	class HAZEL_API MouseEvent : public Event {
 	private:
 		double m_mouseX{};
 		double m_mouseY{};
@@ -35,7 +35,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 	};
 
-	class BLINK_API MouseScrolledEvent : public Event {
+	class HAZEL_API MouseScrolledEvent : public Event {
 	private:
 		double m_offsetX{};
 		double m_offsetY{};
@@ -65,7 +65,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
 	};
 	
-	class BLINK_API MouseButtonEvent : public Event {
+	class HAZEL_API MouseButtonEvent : public Event {
 	protected:
 		int m_button{};
 		MouseButtonEvent(int button)
@@ -81,7 +81,7 @@ namespace Blink {
 		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryMouseButton | EventCategoryInput)
 	};
 	
-	class BLINK_API MouseButtonPressedEvent : public MouseButtonEvent {
+	class HAZEL_API MouseButtonPressedEvent : public MouseButtonEvent {
 	public:
 		MouseButtonPressedEvent(const double button)
 			: MouseButtonEvent(button) {}
@@ -95,7 +95,7 @@ namespace Blink {
 		EVENT_CLASS_TYPE(MouseButtonPressed)
 	};
 
-	class BLINK_API MouseButtonReleasedEvent : public MouseButtonEvent {
+	class HAZEL_API MouseButtonReleasedEvent : public MouseButtonEvent {
 	public:
 		MouseButtonReleasedEvent(const double button)
 			: MouseButtonEvent(button) {}
@@ -110,4 +110,4 @@ namespace Blink {
 	};
 }
 
-#endif // BLINK_MOUSE_EVENT_H
+#endif // HAZEL_MOUSE_EVENT_H
